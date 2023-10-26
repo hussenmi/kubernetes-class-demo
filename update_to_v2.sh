@@ -24,7 +24,7 @@ docker build --no-cache -t my-flask-app:v2 .
 
 echo "Updating the application to v2..."
 kubectl set image deployment/flask-deployment flask-app-container=my-flask-app:v2
-sleep 15  # Give some time for the update to stabilize
+sleep 10  # Give some time for the update to stabilize
 
 echo "The application has been updated to v2. You can access it using the following URL:"
 minikube service flask-service --url
