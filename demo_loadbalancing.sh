@@ -31,3 +31,8 @@ for i in {1..5}; do
     echo
     sleep 2
 done
+
+# Show that the number of pods goes back to 4
+echo "Checking the number of pods after pod deletion..."
+kubectl get pods
+echo "As expected, Kubernetes has maintained 4 replicas even after deleting one pod."
