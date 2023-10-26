@@ -16,6 +16,9 @@
 
 #!/bin/bash
 
+# Set up Minikube's Docker environment
+eval $(minikube docker-env)
+
 echo "Building the Docker image for v2..."
 docker build --no-cache -t my-flask-app:v2 .
 
