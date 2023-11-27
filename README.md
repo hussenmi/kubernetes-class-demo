@@ -1,7 +1,7 @@
 # kubernetes-class-demo
 This repository contains scripts for demonstrating different features of Kubernetes such as how we can use it for scaling applications, updating with no downtime, rolling back updates, etc.
 
-This [video](https://screenapp.io/app/#/shared/3d44a228-dc83-4f29-b85b-d4383fcaa921) demonstrates some of the features of Kubernetes.
+This [video](https://screenapp.io/app/#/shared/02c94959-5a57-438d-9158-915570ac3ef7) demonstrates some of the features of Kubernetes.
 
 To make shell files executable, run the command chmod +x [NAME OF FILE]. 
 

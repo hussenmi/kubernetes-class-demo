@@ -15,19 +15,19 @@
 
 ######################### LOAD BALANCE DEMO VERSION #########################
 
-from flask import Flask
-import socket
+# from flask import Flask
+# import socket
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
-@app.route('/')
-def hello():
-    pod_name = socket.gethostname()
-    # use an h1 tag for the return message
-    return f"Hello from pod: {pod_name}"
+# @app.route('/')
+# def hello():
+#     pod_name = socket.gethostname()
+#     # use an h1 tag for the return message
+#     return f"Hello from pod: {pod_name}"
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+# if __name__ == '__main__':
+#     app.run(debug=True, host='0.0.0.0')
 
 
 ######################### V2 UPDATE #########################
@@ -53,18 +53,18 @@ if __name__ == '__main__':
     
 ######################### V3 (BUGGY) UPDATE #########################
     
-# from flask import Flask
+from flask import Flask
 
-# app = Flask(__name__)
+app = Flask(__name__)
 
-# @app.route('/')
-# def hello():
-#     response = """
-#             <h1 style="font-size: 50px; text-align: center;">
-#                 This is a buggy version!<br>
-#             </h1>
-#     """
-#     return response
+@app.route('/')
+def hello():
+    response = """
+            <h1 style="font-size: 50px; text-align: center;">
+                This is a buggy version!<br>
+            </h1>
+    """
+    return response
 
-# if __name__ == '__main__':
-#     app.run(debug=True, host='0.0.0.0')
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
